@@ -1,4 +1,5 @@
 require 'pry'
+
 def join_nested_strings(src)
   mixed_data_1 = [
     ["The", 4, "quick"],
@@ -16,6 +17,7 @@ def join_nested_strings(src)
       element_index += 1
       end
       row_index += 1
+      binding.pry
     end
   end
 end

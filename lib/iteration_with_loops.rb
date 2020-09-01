@@ -1,3 +1,4 @@
+require 'pry'
 def join_nested_strings(src)
   mixed_data_1 = [
     ["The", 4, "quick"],

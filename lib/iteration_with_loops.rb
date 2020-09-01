@@ -1,4 +1,24 @@
+require 'pry'
+
 def join_nested_strings(src)
-  # src will be an Array of Arrays of Strings and Integers
-  # Combine all Strings present in the AoA into a single value and return it
+  mixed_data_1 = [
+    ["The", 4, "quick"],
+    [-1, "brown", "fox", 30],
+    ["studied", 101, 233, "Ruby"]
+  ]
+  new_array = []
+  total = 0
+  row_index = 0
+  while row_index < src.count do
+    element_index = 0
+    while element_index < src[row_index].count do
+      if mixed_data_1.class == String
+      new_array << mixed_data_1
+      element_index += 1
+      end
+      row_index += 1
+      new_array
+      binding.pry
+    end
+  end
 end
